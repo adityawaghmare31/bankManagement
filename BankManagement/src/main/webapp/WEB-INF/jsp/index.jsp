@@ -12,9 +12,9 @@
 
 </head>
 <body>
-
-<h2 bgcolor="red">${message}</h2>
-<form >
+<h1 align=center>Welcome To Local Bank</h1>
+<h2 bgcolor="red">#{message}</h2>
+<form align=center>
 <input type="text" name="account" placeholder="Enter Account Number"><br><br>
 <input type="password" name="password" placeholder="enter user pass"><br><br>
 
