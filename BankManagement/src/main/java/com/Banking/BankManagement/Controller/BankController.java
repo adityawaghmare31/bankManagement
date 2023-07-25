@@ -44,13 +44,13 @@ public class BankController {
 				}
 			else
 			{
-				mv.setViewName("home");
+				mv.setViewName("index");
 				mv.addObject("message", "wrong password");
 			}
 			}
 			else
 			{
-				mv.setViewName("home");
+				mv.setViewName("index");
 				mv.addObject("message", "Wrong Account Number or Password");
 			}
 			return mv;
@@ -61,7 +61,7 @@ public class BankController {
 	public ModelAndView logout() {
 		
 		mv.addObject("message", "Logout Successful");
-		mv.setViewName("home");
+		mv.setViewName("index");
 		return mv;
 		
 	}
@@ -71,7 +71,7 @@ public class BankController {
 	public ModelAndView CreateAccount(Details details) {
 		BS.CreateAccount(details);
 		mv.addObject("message", "Registration Successful");
-		mv.setViewName("home");
+		mv.setViewName("index");
 		return mv;
 		
 	}
